@@ -86,6 +86,6 @@ Un grand merci à toute l'équipe de **OpenClassrooms** pour leur soutien et leu
 
 ---
 
-**Yummy Nouille** - Créé avec passion par [Votre Nom]. 👨‍💻👩‍💻
+**Yummy Nouille** - Créé avec passion par sorheil tchokothe. 👨‍💻👩‍💻
 
 ---

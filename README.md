@@ -69,7 +69,7 @@ Pour cloner et exécuter ce projet localement, suivez les étapes ci-dessous :
 
 - [Documentation HTML](https://developer.mozilla.org/fr/docs/Web/HTML)
 - [Documentation CSS](https://developer.mozilla.org/fr/docs/Web/CSS)
-- [Documentation Sass](https://sass-lang.com/documentation
+- [Documentation Sass](https://sass-lang.com/documentation)
 
 ---
 

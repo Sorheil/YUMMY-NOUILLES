@@ -15,7 +15,6 @@
 - **HTML5** : Pour structurer le contenu du site web.
 - **CSS3** : Pour styliser le contenu et rendre l'interface visuellement attrayante.
 - **Sass** : Pour gérer plus efficacement les styles CSS avec des fonctionnalités avancées telles que les variables et les mixins.
-- **JavaScript** : Pour ajouter des fonctionnalités interactives à l'interface utilisateur.
 
 ---
 
@@ -65,25 +64,18 @@ Pour cloner et exécuter ce projet localement, suivez les étapes ci-dessous :
 
 ---
 
-### 📸 Aperçu du Projet
-
-![Aperçu du projet Yummy Nouille](lien-vers-une-image-ou-gif-de-demonstration)
-
----
 
 ### 📚 Ressources
 
 - [Documentation HTML](https://developer.mozilla.org/fr/docs/Web/HTML)
 - [Documentation CSS](https://developer.mozilla.org/fr/docs/Web/CSS)
-- [Documentation Sass](https://sass-lang.com/documentation)
-- [Documentation JavaScript](https://developer.mozilla.org/fr/docs/Web/JavaScript)
+- [Documentation Sass](https://sass-lang.com/documentation
 
 ---
 
 ### 🙏 Remerciements
 
-Un grand merci à toute l'équipe de **OpenClassrooms** pour leur soutien et leurs ressources pédagogiques de qualité. Merci également à **Ohmyfood!** pour l'expérience enrichissante en tant que stagiaire, qui a contribué à mon développement en tant que développeur frontend. 🌟
-
+Un grand merci à toute l'équipe de **OpenClassrooms** pour leur soutien et leurs ressources pédagogiques de qualité. 
 ---
 
 **Yummy Nouille** - Créé avec passion par sorheil tchokothe. 👨‍💻👩‍💻

@@ -1,0 +1,43 @@
+/*imporation*/
+@use "variables";
+
+header {
+  .app-bar {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+
+    padding: 18px 47px;
+    margin-right: 40px;
+
+    &__icon {
+      margin-right: 40px;
+
+      img {
+        width: 72px;
+        height: 72px;
+      }
+    }
+
+    &__links {
+      display: flex;
+
+      list-style: none;
+
+      >li {
+        margin-right: 18px;
+
+        font-family: "Bebas Neue", sans-serif;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 29px;
+      }
+    }
+  }
+
+  @media screen and (max-width: variables.$width-phone) {
+    .app-bar {
+      justify-content: center;
+    }
+  }
+}

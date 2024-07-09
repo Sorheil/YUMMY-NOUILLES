@@ -1,0 +1,333 @@
+@use "./sass/partials/variables";
+@use "./sass/partials/header";
+@use "./sass/partials/module.scss";
+@use "./sass/partials/footer.scss";
+
+/*
+*importations des polices
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/*
+*proprietes global
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  a {
+    color: black;
+    text-decoration: none;
+  }
+}
+
+.body {}
+
+/*section hero*/
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 100px;
+  padding: 100px;
+
+  &__description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 20px;
+  }
+
+  &__titre {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 72px;
+    font-weight: 400;
+    line-height: 86px;
+  }
+
+  &__text-description {
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+
+    span {
+      color: red;
+    }
+  }
+
+  img {
+    width: 304px;
+    height: 304px;
+  }
+
+  #cta {
+    @include module.button-click_and_collect;
+  }
+
+  @media screen and (max-width: variables.$width-phone) {
+    flex-direction: column;
+    row-gap: 100px;
+  }
+}
+
+/*section address*/
+
+.address {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(2, auto);
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0px;
+  column-gap: 80px;
+  row-gap: 25px;
+
+  >h1 {
+    grid-column: 1/4;
+    grid-row: 1/2;
+    justify-self: center;
+    font-family: "Bebas Neue", sans-serif;
+  }
+
+  &__box {
+    @include module.module-address__box;
+  }
+
+  /*style responsive*/
+
+  @media screen and (max-width: variables.$width-phone) {
+    grid-template-columns: repeat(1, auto);
+    grid-template-rows: repeat(4, auto);
+
+    >h1 {
+      @media screen and (max-width: variables.$width-phone) {
+        grid-column: 1/2;
+        grid-row: 1/2;
+      }
+    }
+  }
+}
+
+/*section order-now*/
+
+.order-now {
+  @include module.module-order-now;
+}
+
+/*section about*/
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 35px;
+  padding: 40px 0px;
+
+  h1 {
+    justify-self: center;
+    align-self: center;
+    grid-row: 1/2;
+    grid-column: 1/4;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+
+    text-align: center;
+  }
+
+  p {
+    text-align: center;
+    width: 80%;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+  }
+
+  &>* {
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+    align-items: center;
+  }
+
+  &__follow-us {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(2, auto);
+  }
+
+  /* style responsive*/
+
+  &__follow-us {
+    @media screen and (max-width: variables.$width-phone) {
+      grid-template-columns: repeat(1, auto);
+      grid-template-rows: repeat(7, auto);
+
+      &>* {
+        justify-self: center;
+        align-self: center;
+      }
+    }
+  }
+
+  h1 {
+    @media screen and (max-width: variables.$width-phone) {
+      grid-column: 1/2;
+    }
+  }
+}
+
+.about_us {
+  @include module.mudule-about-us;
+}
+
+/* style de la page menu*/
+.main-menu {
+  background-color: #F3F3F3;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 151px;
+  row-gap: 25px;
+
+  >h1 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 72px;
+    font-weight: 400;
+    line-height: 86.4px;
+  }
+
+  >p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24.38px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 30px;
+    padding: 30px 0px;
+    background-color: white;
+
+
+
+    >img {
+      width: 129px;
+      height: 129px;
+    }
+  }
+
+  &__items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+    text-align: center;
+
+    >h1 {
+      font-family: "Bebas Neue", sans-serif;
+      font-size: 27px;
+      font-weight: 400;
+      line-height: 32.4px;
+    }
+
+    h2 {
+      font-family: "Montserrat", sans-serif;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 19.5px;
+      text-align: center;
+    }
+
+    p {
+      font-family: "Montserrat", sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 19.5px;
+      text-align: center;
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+  }
+
+  @media screen and (max-width: variables.$width-phone) {
+    &__items {
+      width: 80%;
+    }
+
+    &__list {
+      background-color: #ffffff;
+    }
+  }
+}
+
+/*style de la page contact*/
+
+.contact {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(2, auto);
+  padding: 60px 145px;
+  row-gap: 50px;
+  column-gap: 100px;
+  
+
+  >h1 {
+    grid-column: 1/4;
+    grid-row: 1/2;
+    justify-self: center;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 72px;
+    font-weight: 400;
+    line-height: 86.4px;
+  }
+
+  &__list {
+    >* {
+      font-family: "Montserrat", sans-serif;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 29.26px;
+    }
+
+    p {
+      font-weight: 400;
+    }
+  }
+
+  @media screen and (max-width: variables.$width-phone) {
+    grid-template-columns: repeat(1, auto);
+    grid-template-rows: repeat(4, auto);
+
+    >h1 {
+      grid-column: 1/2;
+      font-size: 40px;
+      line-height: 0px;
+
+    }
+    .contact__list{
+      h1{
+        font-size: 20px;
+        text-align: center;
+        text-wrap: nowrap;
+      }
+    }
+  }
+}

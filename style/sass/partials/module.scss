@@ -1,0 +1,100 @@
+/*imporation*/
+
+@use "variables";
+
+@mixin button-click_and_collect {
+  width: 216px;
+  height: 56px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  >a {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29px;
+
+    color: white;
+  }
+}
+
+/*
+*style module adress-box
+*/
+
+@mixin module-address__box {
+  display: flex;
+  flex-direction: column;
+  font-family: "Montserrat", sans-serif;
+
+  >img {
+    width: 304px;
+    height: 216px;
+  }
+
+  h2 {
+
+    font-weight: 600;
+  }
+
+  p {
+
+    font-weight: 400;
+  }
+}
+
+/*
+*style module order-now
+*/
+
+@mixin module-order-now {
+  display: flex;
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 20px;
+  padding: 70px 0px;
+  background-color: variables.$secondary-color;
+
+  &>h1 {
+    color: #ffffff;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24.38px;
+  }
+
+  #cta {
+    @include button-click_and_collect;
+  }
+}
+
+/* style module about-us*/
+@mixin mudule-about-us {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 35px;
+  padding: 40px 0px;
+  align-self: center;
+  font-size: 24px;
+  font-weight: 400;
+  font-family: "Bebas Neue", sans-serif;
+
+  p {
+    text-align: center;
+    width: 80%;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+  }
+}
+
+.underline {
+  border-bottom: 4px solid #d2483d;
+}
+.text-bold{
+  font-weight: 800;
+}
